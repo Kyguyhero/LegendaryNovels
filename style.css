@@ -10,21 +10,13 @@ h1 {
 }
 
 img:hover {
-    opacity: 90%;
+    opacity: 95%;
 }
 
-.header {
+header {
     display: flex;
     justify-content: center;
-}
-
-.navbar {
-    justify-content: center;
-    display: flex;
-}
-
-.topLogo {
-    display: flex;
+    align-items: center;
 }
 
 #mainlogo {
