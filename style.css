@@ -3,6 +3,13 @@
     box-sizing: border-box;
 }
 
+@media screen and (max-width: 400px){
+  #header{
+    background-image: none;
+    background-color: white;
+  }
+}
+
 /* Header Content */
 
 #header {
