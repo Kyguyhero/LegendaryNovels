@@ -3,18 +3,13 @@
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 400px){
-  #header{
-    background-image: none;
-    background-color: white;
-  }
-}
-
 /* Header Content */
 
 #header {
-  width: 100%;
+  width: auto;
   height: auto;
+  max-width: 100%;
+  min-height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,6 +31,13 @@
   -webkit-box-shadow: 0 0 5px #999;
   box-shadow: 0 0 5px #999;
   margin: 20px;
+}
+
+@media (max-width: 480px){
+  #header{
+    background-image: none;
+    background-color: white;
+  }
 }
 
 /* Navigation Bar Content */
