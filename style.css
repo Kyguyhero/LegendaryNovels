@@ -3,76 +3,80 @@
     box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  background-image: url(LN-Body-Background-Image.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  }
-
-h1, h2, p {
-    text-align: center;
-    color: #333333;
-}
+/* Header Content */
 
 #header {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    top: 0;
-    left: 0;
-    background-color: white;
-    background-image: url("HelloPic2.webp");
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /*position: relative;
+  top: 0;
+  left: 0;*/
+  background-color: white;
+  background-image: url("Images/Header-Bg.png");
+  background-repeat: repeat;
 }
 
-#nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    position: sticky;
-    /*position: -webkit-sticky;*/
-    top: 0;
-    background-color: #333333;
+#mainlogo {
+  height: auto;
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  -moz-box-shadow: 0 0 5px #999;
+  -webkit-box-shadow: 0 0 5px #999;
+  box-shadow: 0 0 5px #999;
+  margin: 20px;
+}
 
+/* Navigation Bar Content */
+
+#nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: sticky;
+  /*position: -webkit-sticky;*/
+  top: 0;
+  background-color: #F9F9F9;
+  -moz-box-shadow: 0 0 5px #999;
+  -webkit-box-shadow: 0 0 5px #999;
+  box-shadow: 0 0 5px #999;
 }
 
 #nav > a {
   display: block;
   padding: 15px 20px;
   margin: 10px;
-  color: #F9F9F9;
+  color: #333333;
   text-decoration: none;
   border-radius: 5px;
 }
 
 #nav > a:hover {
-  background-color: #F9F9F9;
-  color: #333333;
-}
-
-#nav > a.active {
   background-color: #666666;
   color: #F9F9F9;
 }
 
-#mainlogo {
-    height: auto;
-    width: 250px;
-    background-color: white;
-    border-radius: 10px;
-    -moz-box-shadow: 0 0 5px #999;
-    -webkit-box-shadow: 0 0 5px #999;
-    box-shadow: 0 0 5px #999;
-    margin: 20px;
+#nav > a.active {
+  background-color: #D3D3D3;
+  color: #333333;
 }
+
+/* Body Content */
+
+body {
+  margin: 0;
+  background-image: url("Images/LN-Body-Background-Image.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  }
 
 #main {
   margin: 40px;
@@ -84,4 +88,8 @@ h1, h2, p {
   background-color: white;
 }
 
+h1, h2, p {
+  text-align: center;
+  color: #333333;
+}
 
