@@ -50,7 +50,7 @@
   align-items: center;
   overflow: hidden;
   position: sticky;
-  /*position: -webkit-sticky;*/
+  position: -webkit-sticky;
   top: 0;
   background-color: #F9F9F9;
   -moz-box-shadow: 0 0 5px #999;
@@ -65,6 +65,7 @@
   color: #333333;
   text-decoration: none;
   border-radius: 5px;
+  transition: 0.2s;
 }
 
 #nav > a:hover {
@@ -81,15 +82,18 @@
 
 body {
   margin: 0;
-  background-image: url("Images/LN-Body-Background-Image.png");
+  /*background-image: url("Images/LN-Body-Background-Image.png");*/
+  background-image: url("Images/orange-nature.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   }
 
 #main {
-  margin: 40px;
-  padding: 15px;
+  margin: 8%;
+  margin-top: 4% !important;
+  margin-bottom: 4% !important;
+  padding: 8%;
   border-radius: 5px;
   -moz-box-shadow: 0 0 5px #999;
   -webkit-box-shadow: 0 0 5px #999;
@@ -102,3 +106,52 @@ h1, h2, p {
   color: #333333;
 }
 
+.mission {
+  padding-bottom: 5%;
+}
+
+.staff {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.staff-member {
+  display: flex; 
+  flex-flow: column wrap;
+  align-items: center;
+  width: 280px; 
+  border-radius: 20px;
+  padding: 1%;
+  -moz-box-shadow: 0 0 5px #999;
+  -webkit-box-shadow: 0 0 5px #999;
+  box-shadow: 0 0 5px #999;
+  margin: 2%;
+  padding-top: 20px; 
+  margin-top: 5%; 
+  background-color: #F9F9F9
+}
+
+.staff-pic {
+  max-width: 220px;
+  height: auto;
+  border-radius: 15%;
+  -moz-box-shadow: 0 0 5px #999;
+  -webkit-box-shadow: 0 0 5px #999;
+  box-shadow: 0 0 5px #999;
+}
+
+.staff-text {
+  width: 100%;
+  padding-top: 4%; 
+}
+
+
+.staff-text h3 {
+  text-align: center;
+  margin: 1%;
+}
+
+.staff-text p{
+  margin: 1%;
+}
